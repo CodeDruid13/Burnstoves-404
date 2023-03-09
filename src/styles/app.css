@@ -1,0 +1,79 @@
+/* .container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+} */
+/* *
+.content {
+  position: relative;
+  color: #f1f1f1;
+  top: 50%;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+} */
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#container2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#navi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#infoi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#infoi {
+  z-index: 10;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+  /* padding-top: 56.25%;   */
+  background-color: red;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.react-player > video {
+  position: absolute;
+  object-fit: cover;
+}
+
+.my-paging-dots-class {
+  margin-right: 10px;
+  /* position: absolute; */
+  /* margin-top: 15px; */
+}
+.paging-dot {
+  transform: scale(1.1);
+}
+
+.slider > .slider-frame > .slider-list {
+  width: auto !important;
+}

@@ -1,0 +1,176 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  //   "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  //   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--ubuntu-font);
+
+  .saturate_effect {
+  -webkit-filter: brightness(103%) contrast(114%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(115%) sepia(0%);
+    filter: brightness(103%) contrast(114%) grayscale(0%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(115%) sepia(0%);
+    mix-blend-mode: none;
+    }
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+.image-container {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  background: #ffffff;
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: soft-light;
+  background: #574400;
+  opacity: 1;
+}
+
+.image-container>img {
+  -webkit-filter: brightness(105%) contrast(102%) grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(9%);
+  filter: brightness(105%) contrast(102%) grayscale(50%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(140%) sepia(9%);
+  mix-blend-mode: none;
+}
+
+  .flip-card {
+      background-color: transparent;
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+    }
+  
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+  
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      justify-self: center;
+      justify-content: center;
+      justify-items: center; 
+    }
+  
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+  
+    .flip-card-back {
+      background-color: #fff;
+      color: grey;
+      transform: rotateY(180deg);
+      padding: 10px;
+    }
+
+        .containerGrid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+    
+        .itemGrid {
+          // flex: 0 0 calc(16.66% - 20px);
+          background: teal;
+          color: white;
+          padding: 20px;
+          margin: 10px;
+        }
+
+  &.js-focus-visible :focus:not([data-focus-visible-added]) {
+    outline: none;
+    box-shadow: none;
+  }
+
+    .image-container {
+  
+      width: 100%;
+  
+      >div {
+        position: unset !important;
+      }
+  
+      .image {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+      }
+    }
+    
+    .boxio {
+      position: relative;
+      display: inline-block;
+      width: 90%;
+      height: 90%;
+      background-color: #fff;
+      // border-radius: 5px;
+      // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  
+    .boxio::after {
+      content: "";
+      // border-radius: 5px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 5px 15px #e0e0e0;
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  
+    .boxio:hover {
+      -webkit-transform: scale(1.25, 1.25);
+      transform: scale(1.25, 1.25);
+    }
+  
+    .boxio:hover::after {
+      opacity: 1;
+    }
+
+        .image-containerS {
+          width: 50vw;
+          height: 50vh;
+          position: relative;
+        }
+    
+        .image-containerS .image {
+          width: 100%;
+          height: 100%;
+          position: relative !important;
+          object-fit: cover; // Optional
+        }
+    
+}
