@@ -31,26 +31,20 @@ import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const shareButtonItems = [
   {
-    icon: FaWhatsapp,
-    href: "https://api.whatsapp.com/send?text=https://burnstoves.vercel.app/",
-    color: "whatsapp",
-    title: "WhatsApp",
-  },
-  {
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/shareArticle?mini=true&url=https://burnstoves.vercel.app/",
-    color: "telegram",
-    title: "Telegram",
+    href: "https://www.linkedin.com/company/burn-co/?originalSubdomain=ke",
+    color: "linkedin",
+    title: "LinkedIn",
   },
   {
     icon: FaFacebook,
-    href: "https://www.facebook.com/sharer.php?u=https://burnstoves.vercel.app/",
+    href: "https://www.facebook.com/BURN.Manufacturing/",
     color: "facebook",
     title: "Facebook",
   },
   {
     icon: FaTwitter,
-    href: "https://twitter.com/intent/tweet?url=https://burnstoves.vercel.app/",
+    href: "https://twitter.com/BurnMfg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
     color: "twitter",
     title: "Twitter",
   },
